@@ -2,14 +2,12 @@ package org.example;
 
 import eu.europa.ec.taxud.vies.services.checkvat.CheckVatPortType;
 import eu.europa.ec.taxud.vies.services.checkvat.CheckVatService;
+import jakarta.xml.ws.Holder;
 
-import javax.xml.datatype.DatatypeConfigurationException;
-import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
-import javax.xml.ws.Holder;
 
 public class App {
-    public static void main(String[] args) throws DatatypeConfigurationException {
+    public static void main(String[] args) {
         CheckVatService checkVatService = new CheckVatService();
         CheckVatPortType checkVatPort = checkVatService.getCheckVatPort();
 
